@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset FA — Règlement Légal & Entreprises</title>
+    
+    <!-- Favicon PNG -->
+    <link class="favicon" rel="shortcut icon" href="logo_legal.png" type="image/png">
+    <link class="favicon" rel="icon" href="logo_legal.png" type="image/png">
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-darker: #020604;
+            --bg-card: #050e0a;
+            --accent-gold: #c5a863;
+            --accent-gold-glow: rgba(197, 168, 99, 0.2);
+            --border-color: rgba(197, 168, 99, 0.3);
+            --text-white: #ffffff;
+            --text-gray: #9bb0a7;
+        }
+
+        /* RESET ET BASE STYLE RECOPIÉ SUR SUNSET-ILLEGAL */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-darker);
+            color: var(--text-white);
+            line-height: 1.6;
+        }
+
+        /* LOGO DU HAUT ET TITRE GLOBAL */
+        .top-brand-header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        .main-logo-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 0 20px var(--accent-gold-glow);
+            margin-bottom: 15px;
+        }
+
+        .top-brand-header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            color: var(--text-white);
+        }
+
+        .top-brand-header p {
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 5px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        /* LAYOUT DOUBLE COLONNE COMPATIBLE MOBILE */
+        .main-layout {
+            display: flex;
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px 60px 20px;
+            gap: 30px;
+        }
+
+        /* NAVIGATION LATÉRALE */
+        .sidebar-navigation {
+            width: 300px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 30px;
+            height: fit-content;
+        }
+
+        .nav-card-container {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        .sidebar-section-title {
+            font-family: 'Cinzel', serif;
+            color: var(--accent-gold);
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(197, 168, 99, 0.15);
+        }
+
+        .nav-links-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .nav-links-list a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-gray);
+            text-decoration: none;
+            padding: 12px 15px;
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border-left: 2px solid transparent;
+        }
+
+        .nav-links-list a i {
+            color: var(--accent-gold);
+            width: 18px;
+            text-align: center;
+        }
+
+        .nav-links-list a:hover, .nav-links-list a.active {
+            color: var(--text-white);
+            background-color: rgba(197, 168, 99, 0.05);
+            border-left: 2px solid var(--accent-gold);
+        }
+
+        /* PANNEAU DE CONTENU */
+        .content-container {
+            flex-grow: 1;
+            max-width: 1070px;
+        }
+
+        .law-card-block {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+            margin-bottom: 35px;
+        }
+
+        .law-card-header {
+            background-color: rgba(2, 6, 4, 0.6);
+            padding: 20px 30px;
+            border-bottom: 1px solid rgba(197, 168, 99, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .law-card-header i {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+        }
+
+        .law-card-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-white);
+        }
+
+        .law-card-body {
+            padding: 35px;
+        }
+
+        /* TEXTES INTERNES DES ARTICLES */
+        .sub-article {
+            margin-bottom: 30px;
+        }
+
+        .sub-article:last-child {
+            margin-bottom: 0;
+        }
+
+        .sub-article-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        .sub-article-text {
+            color: var(--text-white);
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        .sub-article-text p {
+            margin-bottom: 12px;
+        }
+
+        .sub-article-text ul {
+            margin: 12px 0 12px 20px;
+            list-style-type: square;
+            color: var(--text-gray);
+        }
+
+        .sub-article-text li {
+            margin-bottom: 8px;
+        }
+
+        .sub-article-text strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* ENCADRÉ SPÉCIAL */
+        .important-callout {
+            background-color: rgba(197, 168, 99, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .important-callout h4 {
+            color: var(--accent-gold);
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .important-callout p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .terminal-footer {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: rgba(197, 168, 99, 0.3);
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        /* CORRECTIONS ET COMPATIBILITÉ POUR SMARTPHONES (RESPONSIVE) */
+        @media (max-width: 1024px) {
+            .top-brand-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .main-layout {
+                flex-direction: column;
+                padding: 0 15px 40px 15px;
+                gap: 20px;
+            }
+
+            /* Le menu passe au-dessus du texte proprement */
+            .sidebar-navigation {
+                width: 100%;
+                position: relative;
+                top: 0;
+            }
+
+            /* Transformation de la liste en grille sur téléphone pour économiser de la place */
+            .nav-links-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                gap: 8px;
+            }
+
+            .nav-links-list a {
+                padding: 10px;
+                font-size: 0.8rem;
+                border-left: none;
+                border-bottom: 2px solid transparent;
+                background-color: rgba(255, 255, 255, 0.02);
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .nav-links-list a:hover, .nav-links-list a.active {
+                border-left: none;
+                border-bottom: 2px solid var(--accent-gold);
+            }
+
+            /* Réduction des paddings sur mobile pour ne pas perdre d'espace */
+            .law-card-header {
+                padding: 15px 20px;
+            }
+
+            .law-card-body {
+                padding: 20px;
+            }
+
+            .sub-article-text {
+                text-align: left; /* Plus lisible sur petit écran */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête minimal avec Logo -->
+    <header class="top-brand-header">
+        <img src="logo_legal.png" alt="Sunset FA Logo" class="main-logo-img" onerror="this.style.display='none'">
+        <h1>SUNSET FA</h1>
+        <p>Règlement Légal & Entreprises</p>
+    </header>
+
+    <!-- Conteneur global -->
+    <div class="main-layout">
+        
+        <!-- Navigation latérale (Devient une grille sur mobile) -->
+        <div class="sidebar-navigation">
+            <div class="nav-card-container">
+                <h3 class="sidebar-section-title">Navigation</h3>
+                <ul class="nav-links-list">
+                    <li><a href="#dossier-validation" class="active"><i class="fa-solid fa-file-signature"></i> Enregistrement</a></li>
+                    <li><a href="#devoirs-pdg"><i class="fa-solid fa-user-shield"></i> Directives PDG</a></li>
+                    <li><a href="#salaries-recrutement"><i class="fa-solid fa-users"></i> Code du Travail</a></li>
+                    <li><a href="#compta-blanchiment"><i class="fa-solid fa-scale-balanced"></i> Économie & Flux</a></li>
+                    <li><a href="#racket-protection"><i class="fa-solid fa-shield-halved"></i> Pression & Racket</a></li>
+                    <li><a href="#saisie-locaux"><i class="fa-solid fa-building-circle-xmark"></i> Carence & Saisies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section de contenu textuel -->
+        <div class="content-container">
+
+            <!-- SECTION 1 -->
+            <div class="law-card-block" id="dossier-validation">
+                <div class="law-card-header">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <h2>1. Processus de Création, Reprise et d'Enregistrement</h2>
+                </div>
+                <div class="law-card-body">
+                    <div class="sub-article">
+                        <div class="sub-article-title">1.1 Dépôt Obligatoire du Dossier Économique</div>
+                        <div class="sub-article-text">
+                            <p>Aucune entité commerciale, industrielle ou artisanale ne peut exercer ses activités sur le territoire de <strong>Sunset FA</strong> sans avoir préalablement soumis un dossier de candidature complet auprès des instances gouvernementales et de l'équipe de régulation légale.</p>
+                            <p>Ce dossier doit impérativement contenir : un historique détaillé du projet (Lore), l'identité des membres fondateurs (PDG, Co-PDG, Directeurs initiaux), une étude d'implantation géographique cohérente avec la cartographie urbaine, ainsi qu'une simulation d'activité (Business Plan) démontrant le potentiel d'interactions de rôleplay généré pour les citoyens.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-article">
+                        <div class="sub-article-title">1.2 Période Globale d'Observation Légale (Probation)</div>
+                        <div class="sub-article-text">
+                            <p>Toute entreprise venant de recevoir une homologation d'ouverture est soumise à un statut de probation d'une durée incompressible de <strong>14 jours civils</strong>. Durant cette phase charnière, les mouvements financiers, la conformité des scènes et l'assiduité globale de la direction seront observés de près par l'équipe d'administration.</p>
+                            <p>Si la structure fait preuve d'une absence manifeste d'activité, d'un comportement hors-jeu inapproprié ou ne parvient pas à ouvrir ses portes régulièrement, le projet sera immédiatement gelé, et l'infrastructure sera réaffectée à d'autres candidats sans préavis ni compensation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2 -->
+            <div class="law-card-block" id="devoirs-pdg">
+                <div class="law-card-header">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h2>2. Code Déontologique et Devoirs de la Direction</h2>
+                </div>
+                <div class="law-card-body">
+                    <div class="sub-article">
+                        <div class="sub-article-title">2.1 Exemplarité Obligatoire des Chefs d'Entreprise</div>
+                        <div class="sub-article-text">
+                            <p>Les titulaires de postes de direction incarnent les piliers de l'économie légale du serveur. Ils ont l'obligation formelle de maintenir un niveau de comportement irréprochable, exempt de toute toxicité. L'abus de pouvoir unilatéral non étayé par une intrigue solide, le chantage, ou le non-respect des règles de base communautaires (HRP) vis-à-vis des salariés ou clients entraîneront une destitution administrative immédiate du gérant.</p>
+                        </div>
+                    </div>
+
+                    <div class="sub-article">
+                        <div class="sub-article-title">2.2 Obligations Administratives Rigoureuses</div>
+                        <div class="sub-article-text">
+                            <p>Les dirigeants ont la responsabilité légale de tenir des registres clairs via les outils mis à leur disposition en ville ou sur le réseau de communication externe. Il est exigé de comptabiliser précisément : les embauches, les licenciements avec motifs factuels, les flux de stocks, les fiches de paie et l'inventaire des coffres. Les patrons d'entreprise se portent garants devant l'État des agissements de leurs employés lorsque ces derniers portent l'uniforme ou utilisent le matériel de la société.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 3 -->
+            <div class="law-card-block" id="salaries-recrutement">
+                <div class="law-card-header">
+                    <i class="fa-solid fa-users"></i>
+                    <h2>3. Code du Travail, Recrutements et Gestion Interne</h2>
+                </div>
+                <div class="law-card-body">
+                    <div class="sub-article">
+                        <div class="sub-article-title">3.1 Encadrement des Contrats et Licenciements</div>
+                        <div class="sub-article-text">
+                            <p>Toute personne active au sein d'une entreprise doit être officiellement déclarée et enregistrée dans le menu scripté correspondant en jeu. Les pratiques d'emploi dissimulé de civils (travail au noir permanent) sont rigoureusement interdites, sauf dérogation accordée pour des scènes de corruption spécifiques.</p>
+                            <p>Les licenciements doivent s'appuyer sur des faits concrets identifiables en jeu (faute professionnelle, insubordination récurrente, vol manifeste dans les réserves, abandon de poste). Les licenciements dits "arbitraires" ou motivés par des conflits extérieurs au jeu pourront faire l'objet de saisines judiciaires et d'enquêtes pour préjudice moral auprès des tribunaux civils.</p>
+                        </div>
+                    </div>
+
+                    <div class="sub-article">
+                        <div class="sub-article-title">3.2 Régulation des Uniformes et Véhicules Professionnels</div>
+                        <div class="sub-article-text">
+                            <p>Lorsqu'un joueur est considéré en service, il doit porter une tenue de travail validée et reconnaissable propre à l'identité visuelle de sa société. L'usage de la flotte automobile de l'entreprise est strictement réservé au cadre professionnel de la structure.</p>
+                            <ul>
+                                <li>Il est <strong>formellement interdit</strong> d'utiliser des véhicules floqués, professionnels ou utilitaires d'entreprise pour organiser, participer ou couvrir des activités illégales (braquages, livraisons de drogues, cavales).</li>
+                                <li>Les véhicules professionnels ne doivent pas servir de coffre de stockage à long terme pour du matériel de contrebande ou des armes lourdes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 4 -->
+            <div class="law-card-block" id="compta-blanchiment">
+                <div class="law-card-header">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h2>4. Économie Légale, Fiscalité et Traçabilité</h2>
+                </div>
+                <div class="law-card-body">
+                    <div class="sub-article">
+                        <div class="sub-article-title">4.1 Sincérité de la Facturation Professionnelle</div>
+                        <div class="sub-article-text">
+                            <p>Toutes les factures émises en jeu par le biais du système de comptabilité doivent correspondre à une prestation de service réelle ou à la remise effective d'une marchandise présente au catalogue approuvé de la structure. Les surfacturations injustifiées visant à transférer frauduleusement des capitaux entre joueurs sans interaction associée, ou l'édition de "factures fantômes", sont proscrites et assimilées à des failles de script économiques.</p>
+                        </div>
+                    </div>
+
+                    <div class="sub-article">
+                        <div class="sub-article-title">4.2 Régulation Critique de la Corruption et du Blanchiment</div>
+                        <div class="sub-article-text">
+                            <p>L'utilisation d'un commerce ou d'un business légal pour blanchir des capitaux en provenance directe des organisations criminelles est régie par une directive stricte :</p>
+                            <div class="important-callout">
+                                <h4><i class="fa-solid fa-gavel"></i> Clause Impérative de Corruption</h4>
+                                <p>Aucun dirigeant ou cadre d'entreprise légale ne peut accepter d'argent sale, modifier sa comptabilité ou transformer ses locaux en plaque tournante de l'illégal sans avoir obtenu au préalable la validation explicite d'un <strong>Dossier de Corruption Économique</strong> par le Staff. Toute infraction constatée en l'absence de ce dossier validé sera lourdement réprimée par des sanctions administratives de niveau supérieur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 5 -->
+            <div class="law-card-block" id="racket-protection">
+                <div class="law-card-header">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>5. Encadrement des Rapports à l'Illégal et Racket</h2>
+                </div>
+                <div class="law-card-body">
+                    <div class="sub-article">
+                        <div class="sub-article-title">5.1 Régulation Légale du Racket et "Taxes de Protection"</div>
+                        <div class="sub-article-text">
+                            <p>Conformément à la charte globale de Sunset FA, les groupes criminels organisés et officiellement reconnus ont l'autorisation de tenter d'imposer un racket ou un service de protection payant sur les entreprises civiles présentes dans leurs zones d'influence géographique.</p>
+                            <p>Cependant, pour maintenir un équilibre sain sur le serveur et éviter d'étouffer l'économie légale, ce mécanisme est restreint par les règles impératives suivantes :</p>
+                            <ul>
+                                <li>La demande de taxe doit découler d'un historique de rôleplay concret (menaces, démonstrations de force, protection réelle de convois logistiques contre d'autres groupes).</li>
+                                <li>Le montant maximal exigible ne peut en aucun cas dépasser une fourchette stricte située entre <strong>10 000$ et 50 000$ par semaine</strong>, calculée proportionnellement à la santé financière de l'entreprise visée.</li>
+                                <li>Le harcèlement moral ou physique destructeur visant à piller quotidiennement ou à forcer la faillite programmée d'un commerce légal est interdit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 6 -->
+            <div class="law-card-block" id="saisie-locaux">
+                <div class="law-card-header">
+                    <i class="fa-solid fa-building-circle-xmark"></i>
+                    <h2>6. Seuils de Carence, Inactivité et Saisies de l'État</h2>
+                </div>
+                <div class="law-card-body">
+                    <div class="sub-article">
+                        <div class="sub-article-title">6.1 Carence et Inactivité Majeure</div>
+                        <div class="sub-article-text">
+                            <p>Afin de garantir un serveur vivant, le maintien de la propriété d'un local ou d'une entreprise exige une présence et une animation effectives sur le terrain. Si une structure affiche une inactivité totale ou une fermeture consécutive d'une durée supérieure à <strong>7 jours calendaires</strong>, sans qu'une demande d'absence formelle (LOA - Leave of Absence) n'ait été déposée et validée sur les canaux officiels, le Gouvernement lancera une procédure d'expropriation pour carence d'activité.</p>
+                        </div>
+                    </div>
+
+                    <div class="sub-article">
+                        <div class="sub-article-title">6.2 Expropriation Légale et Remise sur le Marché</div>
+                        <div class="sub-article-text">
+                            <p>Lorsqu'une saisie administrative ou judiciaire est prononcée, les accès aux locaux sont instantanément révoqués, les comptes bancaires de l'entreprise sont gelés au profit de l'État et l'intégralité du stock restant est confisquée.</p>
+                            <p>L'entreprise ainsi récupérée retourne dans le domaine public de Sunset FA et pourra faire l'objet d'un nouvel appel à candidatures pour permettre à un repreneur sérieux de soumettre son propre projet.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-footer">
+                        // SECURE DATA CONNECTED // SUNSET FA LEGAL STANDARD
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script de suivi dynamique -->
+    <script>
+        const sections = document.querySelectorAll('.law-card-block');
+        const navLinks = document.querySelectorAll('.nav-links-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
